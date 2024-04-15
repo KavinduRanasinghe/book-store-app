@@ -1,8 +1,12 @@
 import express from "express";
+import { port } from "./config.js";
 
-const PORT = 5555;
+
 const app = express();
 
-app.listen(PORT, () => {
-    console.log(`App is listening to port : ${PORT}`)
-})
+app.listen(port, () => {
+    console.log(`App is listening to port : ${port}\n`)
+});
+
+// index.js
+
